@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--Made by Dylan-->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		<script src="jscriptTrans.js"></script>
+	<head>
+	<body>
+		<div ID="topBar">The Alcowatch</div>
+		<div ID="progressBar">
+			<div class="progOuter">
+				<div class="prog" ID="prog1">Your <br> Information</div>
+			</div>
+			<div class="progOuter">
+				<div class="arrow" ID="arrow1">&rarr;</div>
+			</div>
+			<div class="progOuter">
+				<div class="prog" ID="prog2">Payment <br> Information</div>
+			</div>
+			<div class="progOuter">
+				<div class="arrow" ID="arrow2">&rarr;</div>
+			</div>
+			<div class="progOuter">
+				<div class="prog" ID="prog3">Order <br> Review</div>
+			</div>
+			<div class="progOuter">
+				<div class="arrow" ID="arrow3">&rarr;</div>
+			</div>
+			<div class="progOuter">
+				<div class="prog" ID="prog4">Thank You!</div>
+			</div>
+		</div>
+		<div ID="middle">
+			<div ID="Inputs">
+				
+				<div ID="one">
+					<div ID="header1">Your Information</div>
+					<div ID="name">
+						<input ID="firstName" placeholder="First Name">
+						<input ID="lastName" placeholder="Last Name">
+					</div>
+					<input ID="address" placeholder="Address">
+					<div ID="addresInfo">
+						<input ID="postalCode" placeholder="PostalCode">
+						<input ID="suiteNum" placeholder="Suite Num*">
+					</div>
+					<input ID="city" placeholder="City">
+					<input ID="province" placeholder="Province/State">
+					<input ID="country" placeholder="Country">
+					<input ID="email" placeholder="Email Address">
+					<input ID="phone" placeholder="Phone Number">
+				</div>
+					
+				<div ID="two">
+					<div ID="header2">Payment Information</div>
+					<input ID="creditName" placeholder="Name on Credit Card">
+					<input ID="creditNum" placeholder="Card Number">
+					<div ID="cardInfo">
+						<input ID="month" placeholder="Month (MM)">
+						<input ID="year" placeholder="Year (YYYY)">
+						<input ID="code" placeholder="Security Code">
+					</div>
+					<div ID="shipdif">
+						<input type="checkbox" ID="shippingConfirm" onclick="check()">
+						<div ID="header3">Use a Different Address</div>
+					</div>
+					<input class="newShip" ID="shipping_address" placeholder="Address" disabled>
+					<div ID="shipping_addresInfo">
+						<input class="newShip" ID="shipping_postalCode" placeholder="PostalCode" disabled>
+						<input class="newShip" ID="shipping_suiteNum" placeholder="Suite Num*" disabled>
+					</div>
+					<input class="newShip" ID="shipping_city" placeholder="City" disabled>
+					<input class="newShip" ID="shipping_province" placeholder="Province/State" disabled>
+					<input class="newShip" ID="shipping_country" placeholder="Country" disabled>
+					<input class="newShip" ID="shipping_email" placeholder="Email Address" disabled>
+					<input class="newShip" ID="shipping_phone" placeholder="Phone Number*" disabled>
+						
+				</div>
+				
+				<div ID="three">
+					<div ID="header4">Overview:</div>
+					<div ID="overviewInfo">words</div>
+				</div>
+				
+			</div>
+		</div>
+		<div ID="bottom">
+			<div ID="outer">
+				<div ID="outer2">
+					<button ID="next" onclick="next()">Next Step</button>
+					<div ID="navigation">
+						<button ID="cancel" onclick="cancel()">Cancel</button>
+						<button ID="back" onclick="back()" disabled>Back</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

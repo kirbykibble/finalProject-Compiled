@@ -1,0 +1,50 @@
+body {
+	overflow: hidden;
+}
+#display {
+	width: 100vw;
+	height: 500vh;
+	display: flex;
+	flex-flow: column;
+	margin: none;
+	background-color: black;
+	color: white;
+	transition: all ease 0.2s;
+}
+#one, #two, #three, #four, #five {
+	width: 100vw;
+	height: 100vh;
+}
+#header1, #header2, #header3, #header4, #header5 {
+	font-size: 4vw;
+	text-align: center;
+	margin-top: 40vh;
+}
+#description1, #description2, #description3, #description4, #description5 {
+	font-size: 2vw;
+	text-align: center;
+	padding: 10px;
+}
+#buttons {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+button {
+	font-size: 2vw;
+	border-radius: 5px;
+	border: none;
+	margin: 10px;
+	transition: all ease 0.2s;
+	background-color: slategrey;
+	color: white;
+}
+button:hover {
+	font-size: 2vw;
+	border-radius: 10px;
+	color: slategrey;
+	background-color: white;
+	border: none;
+	margin: 10px;
+	transition: all ease 0.2s;
+}
